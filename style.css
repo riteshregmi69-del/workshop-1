@@ -17,9 +17,9 @@ a {
 }
 
 .site-header {
-    background-color: #ffffff;
-    color: #000000;
-    border-bottom: 2px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 1px solid #222222;
 }
 
 .header-content {
@@ -34,23 +34,23 @@ a {
 
 .site-header h1 {
     font-size: 2rem;
-    color: #000000;
+    color: #ffffff;
 }
 
 .subtitle {
     font-size: 1.05rem;
-    color: #222222;
+    color: #cccccc;
 }
 
 .tagline {
     font-size: 0.9rem;
-    color: #444444;
+    color: #aaaaaa;
     font-style: italic;
 }
 
 .main-nav {
-    background-color: #ffffff;
-    border-bottom: 1px solid #cccccc;
+    background-color: #111111;
+    border-bottom: 1px solid #222222;
     padding: 0 16px;
 }
 
@@ -66,7 +66,7 @@ a {
 }
 
 .nav-links a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.9rem;
     padding: 6px 12px;
@@ -75,7 +75,7 @@ a {
 }
 
 .nav-links a:hover {
-    background-color: #000000;
+    background-color: #333333;
     color: #ffffff;
 }
 
@@ -326,10 +326,10 @@ video.player {
 }
 
 .site-footer {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
     margin-top: 30px;
-    border-top: 2px solid #000000;
+    border-top: 2px solid #222222;
 }
 
 .footer-content {
@@ -346,12 +346,12 @@ video.player {
 
 .footer-left h3 {
     font-size: 1.2rem;
-    color: #000000;
+    color: #ffffff;
 }
 
 .footer-left p {
     font-size: 0.85rem;
-    color: #444444;
+    color: #cccccc;
 }
 
 .footer-links {
@@ -363,7 +363,7 @@ video.player {
 }
 
 .footer-links a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.85rem;
 }
@@ -376,9 +376,9 @@ video.player {
     text-align: center;
     padding: 12px 16px;
     font-size: 0.8rem;
-    color: #555555;
-    background-color: #ffffff;
-    border-top: 1px solid #e0e0e0;
+    color: #888888;
+    background-color: #0a0a0a;
+    border-top: 1px solid #222222;
 }
 
 @media (max-width: 850px) {
@@ -413,8 +413,9 @@ video.player {
 
     .nav-links a {
         text-align: center;
-        border: 1px solid #e0e0e0;
-        background-color: #ffffff;
+        border: 1px solid #333333;
+        background-color: #1a1a1a;
+        color: #ffffff;
     }
 
     .courses-grid {
