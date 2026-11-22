@@ -1,0 +1,686 @@
+/*
+   Week 1 Workshop: Student Learning Resource Platform
+   Project: StudySpace
+   Module: 5CS045 Full Stack Development
+   Technologies: HTML5, CSS (Flexbox & CSS Grid)
+*/
+
+/* ==========================================================================
+   1. Base Reset and Typography
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #f4f7fb;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   2. Header & Navigation (Demonstrating Flexbox)
+   ========================================================================== */
+
+.site-header {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox in Header Container */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 28px 20px 18px 20px;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.site-subtitle {
+    font-size: 1.1rem;
+    color: #93c5fd;
+    font-weight: 500;
+}
+
+.site-tagline {
+    font-size: 0.95rem;
+    color: #e0e7ff;
+    font-style: italic;
+}
+
+/* Navigation Bar */
+.main-nav {
+    background-color: #172554;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 0 16px;
+}
+
+/* Flexbox properties demonstrated on navigation links:
+   flex-direction, justify-content, align-items, gap, flex-wrap */
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav-links li a {
+    display: block;
+    color: #f1f5f9;
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   3. Main Page Layout (Demonstrating CSS Grid)
+   ========================================================================== */
+
+/* Major page structure using CSS Grid: Main Content (2fr) | Sidebar (1fr) */
+.page-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 28px;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   4. Content Sections & General Styling
+   ========================================================================== */
+
+.content-section {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 22px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.content-section h2 {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.section-intro {
+    color: #4b5563;
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+}
+
+/* Home Section */
+.home-intro p {
+    color: #374151;
+    margin-bottom: 12px;
+}
+
+.home-image {
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 14px;
+    border: 1px solid #cbd5e1;
+}
+
+/* ==========================================================================
+   5. Courses Section (Demonstrating CSS Grid & Grid Spanning)
+   ========================================================================== */
+
+/* Grid for Course Cards demonstrating grid-template-columns and gap */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+/* Grid Item Spanning: Featured card spans 2 columns on desktop */
+.card-featured {
+    grid-column: span 2;
+}
+
+/* Individual Course Card using Flexbox internally */
+.course-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+/* Flexbox inside Card Body */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.card-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1e40af;
+    background-color: #dbeafe;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.card-body h3 {
+    font-size: 1.1rem;
+    color: #1e3a8a;
+}
+
+.card-body p {
+    font-size: 0.88rem;
+    color: #4b5563;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.card-link {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.card-link:hover {
+    background-color: #1d4ed8;
+}
+
+/* ==========================================================================
+   6. Study Resources Section (CSS Grid)
+   ========================================================================== */
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.resource-box {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.resource-box h3 {
+    font-size: 1.1rem;
+    color: #1e3a8a;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 6px;
+}
+
+.resources-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.resources-list li {
+    font-size: 0.9rem;
+    color: #374151;
+    margin-bottom: 8px;
+    line-height: 1.45;
+}
+
+.external-links {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.external-links li {
+    font-size: 0.9rem;
+    color: #374151;
+    margin-bottom: 8px;
+    line-height: 1.45;
+}
+
+.external-links li a {
+    color: #2563eb;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.external-links li a:hover {
+    color: #1d4ed8;
+}
+
+/* ==========================================================================
+   7. Featured Study Section (Figure & Figcaption)
+   ========================================================================== */
+
+.featured-figure {
+    margin: 14px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #f1f5f9;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+}
+
+.featured-figure figcaption {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #475569;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.featured-caption-text {
+    font-size: 0.93rem;
+    color: #374151;
+    margin-top: 10px;
+}
+
+/* ==========================================================================
+   8. Multimedia Section (Video & Audio Elements)
+   ========================================================================== */
+
+.media-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.media-item {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.media-item h3 {
+    font-size: 1.05rem;
+    color: #1e3a8a;
+}
+
+.media-item p {
+    font-size: 0.88rem;
+    color: #4b5563;
+}
+
+.media-video {
+    width: 100%;
+    max-height: 220px;
+    border-radius: 4px;
+    background-color: #000000;
+}
+
+.media-audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* ==========================================================================
+   9. Contact Section
+   ========================================================================== */
+
+.contact-details {
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-left: 4px solid #2563eb;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.contact-details p {
+    font-size: 0.92rem;
+    color: #1e3a8a;
+    margin-bottom: 6px;
+}
+
+.contact-details p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-details a {
+    color: #1d4ed8;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   10. Sidebar / Secondary Information (Aside)
+   ========================================================================== */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 18px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-card h3 {
+    font-size: 1.15rem;
+    color: #1e3a8a;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+}
+
+/* Announcements List */
+.announcement-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.announcement-items li {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.announcement-items li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1e40af;
+    background-color: #dbeafe;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-bottom: 3px;
+}
+
+.announcement-title {
+    color: #1e293b;
+    font-size: 0.9rem;
+}
+
+.announcement-text {
+    font-size: 0.83rem;
+    color: #64748b;
+}
+
+/* Quick Study Tips List */
+.tips-items {
+    padding-left: 20px;
+}
+
+.tips-items li {
+    font-size: 0.9rem;
+    color: #374151;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.tips-items li:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   11. Footer Section (Flexbox)
+   ========================================================================== */
+
+.site-footer {
+    background-color: #1e293b;
+    color: #f8fafc;
+    margin-top: 35px;
+    border-top: 4px solid #2563eb;
+}
+
+/* Flexbox in Footer */
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.footer-brand {
+    max-width: 440px;
+}
+
+.footer-brand h3 {
+    font-size: 1.35rem;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.footer-tag {
+    font-size: 0.9rem;
+    color: #93c5fd;
+    margin-bottom: 8px;
+}
+
+.footer-about {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    line-height: 1.45;
+}
+
+.footer-links-box h4 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-nav li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.footer-nav li a:hover {
+    color: #ffffff;
+    background-color: #334155;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 0.82rem;
+    color: #94a3b8;
+    background-color: #0f172a;
+    border-top: 1px solid #334155;
+}
+
+/* ==========================================================================
+   12. Responsive Design (Media Queries)
+   ========================================================================== */
+
+/* Tablet View (max-width: 900px) */
+@media (max-width: 900px) {
+    .page-layout {
+        grid-template-columns: 1.7fr 1.3fr;
+        gap: 20px;
+        padding: 0 16px;
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-featured {
+        grid-column: span 1;
+    }
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile & Small Screen View (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Stack Main Content and Sidebar vertically */
+    .page-layout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin: 18px auto;
+        padding: 0 14px;
+    }
+
+    /* Convert Navigation into a stacked layout */
+    .nav-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+        padding: 10px 0;
+    }
+
+    .nav-links li a {
+        text-align: center;
+        padding: 10px 14px;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    /* Course cards become single-column */
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-featured {
+        grid-column: span 1;
+    }
+
+    /* Media grid becomes single-column */
+    .media-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer stacks vertically */
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .site-title {
+        font-size: 1.9rem;
+    }
+
+    .header-container {
+        padding: 22px 14px 14px 14px;
+    }
+}
+
+/* Small Mobile Screen View (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
+    .site-title {
+        font-size: 1.6rem;
+    }
+
+    .content-section {
+        padding: 16px 12px;
+    }
+
+    .sidebar-card {
+        padding: 14px 12px;
+    }
+
+    .content-section h2 {
+        font-size: 1.3rem;
+    }
+}
