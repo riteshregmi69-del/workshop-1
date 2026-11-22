@@ -8,12 +8,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.6;
-    color: #1f2937;
+    color: #000000;
     background-color: #f8fafc;
 }
 
 a {
-    color: #1e3a8a;
+    color: #000000;
 }
 
 .site-header {
@@ -81,7 +81,7 @@ a {
 
 .content-box {
     background-color: #ffffff;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #cccccc;
     border-radius: 6px;
     padding: 18px;
     margin-bottom: 18px;
@@ -89,15 +89,15 @@ a {
 
 .content-box h2 {
     font-size: 1.3rem;
-    color: #1e3a8a;
-    border-bottom: 2px solid #dbeafe;
+    color: #000000;
+    border-bottom: 2px solid #000000;
     padding-bottom: 6px;
     margin-bottom: 12px;
 }
 
 .content-box p {
     margin-bottom: 10px;
-    color: #374151;
+    color: #000000;
 }
 
 .home-photo {
@@ -106,7 +106,7 @@ a {
     object-fit: cover;
     border-radius: 4px;
     margin-top: 10px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #cccccc;
 }
 
 .courses-grid {
@@ -122,7 +122,7 @@ a {
 
 .course-card {
     background-color: #ffffff;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     padding: 14px;
     display: flex;
@@ -133,12 +133,12 @@ a {
 
 .course-card h3 {
     font-size: 1rem;
-    color: #1e3a8a;
+    color: #000000;
 }
 
 .course-card p {
     font-size: 0.85rem;
-    color: #4b5563;
+    color: #000000;
     margin-bottom: 8px;
     flex-grow: 1;
 }
@@ -167,16 +167,16 @@ a {
 
 .resource-group {
     background-color: #ffffff;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     padding: 12px 14px;
 }
 
 .resource-group h3 {
     font-size: 0.95rem;
-    color: #1e3a8a;
+    color: #000000;
     margin-bottom: 8px;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #cccccc;
     padding-bottom: 4px;
 }
 
@@ -187,21 +187,21 @@ a {
 .simple-list li {
     font-size: 0.85rem;
     margin-bottom: 5px;
-    color: #374151;
+    color: #000000;
 }
 
 .simple-list a {
-    color: #1e3a8a;
+    color: #000000;
     text-decoration: underline;
 }
 
 .simple-list a:hover {
-    color: #2563eb;
+    color: #1e3a8a;
 }
 
 .featured-block {
     margin: 10px 0;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     overflow: hidden;
     background-color: #ffffff;
@@ -218,9 +218,9 @@ a {
     padding: 8px 12px;
     font-size: 0.85rem;
     font-style: italic;
-    color: #4b5563;
+    color: #000000;
     background-color: #f8fafc;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid #cccccc;
     text-align: center;
 }
 
@@ -233,14 +233,14 @@ a {
 
 .media-box {
     background-color: #ffffff;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     padding: 14px;
 }
 
 .media-box h3 {
     font-size: 0.95rem;
-    color: #1e3a8a;
+    color: #000000;
     margin-bottom: 6px;
 }
 
@@ -248,7 +248,7 @@ a {
     width: 100%;
     margin-top: 6px;
     border-radius: 3px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #cccccc;
 }
 
 video.player {
@@ -264,15 +264,15 @@ video.player {
 
 .sidebar-box {
     background-color: #ffffff;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #cccccc;
     border-radius: 6px;
     padding: 16px;
 }
 
 .sidebar-box h3 {
     font-size: 1.05rem;
-    color: #1e3a8a;
-    border-bottom: 2px solid #dbeafe;
+    color: #000000;
+    border-bottom: 2px solid #000000;
     padding-bottom: 6px;
     margin-bottom: 10px;
 }
@@ -286,7 +286,7 @@ video.player {
 
 .announcements li {
     padding-bottom: 6px;
-    border-bottom: 1px solid #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .announcements li:last-child {
@@ -296,12 +296,12 @@ video.player {
 
 .announcements strong {
     font-size: 0.85rem;
-    color: #1f2937;
+    color: #000000;
 }
 
 .announcements p {
     font-size: 0.8rem;
-    color: #4b5563;
+    color: #000000;
     margin-top: 2px;
 }
 
@@ -312,7 +312,7 @@ video.player {
 .tips-list li {
     font-size: 0.85rem;
     margin-bottom: 6px;
-    color: #374151;
+    color: #000000;
 }
 
 .site-footer {
