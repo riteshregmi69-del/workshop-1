@@ -8,13 +8,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.6;
-    color: #333333;
-    background-color: #f7f8f9;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+a {
+    color: #000000;
 }
 
 .site-header {
-    background-color: #1a56db;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    border-bottom: 2px solid #000000;
 }
 
 .header-content {
@@ -29,21 +34,23 @@ body {
 
 .site-header h1 {
     font-size: 2rem;
+    color: #000000;
 }
 
 .subtitle {
     font-size: 1.05rem;
-    color: #e0e7ff;
+    color: #222222;
 }
 
 .tagline {
     font-size: 0.9rem;
-    color: #dbeafe;
+    color: #444444;
     font-style: italic;
 }
 
 .main-nav {
-    background-color: #1742a0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
     padding: 0 16px;
 }
 
@@ -59,15 +66,17 @@ body {
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-size: 0.9rem;
     padding: 6px 12px;
     border-radius: 3px;
+    border: 1px solid transparent;
 }
 
 .nav-links a:hover {
-    background-color: #1a56db;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .page-layout {
@@ -81,7 +90,7 @@ body {
 
 .content-box {
     background-color: #ffffff;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     padding: 20px;
     margin-bottom: 20px;
@@ -89,14 +98,15 @@ body {
 
 .content-box h2 {
     font-size: 1.4rem;
-    color: #1a56db;
-    border-bottom: 1px solid #e0e0e0;
+    color: #000000;
+    border-bottom: 1px solid #cccccc;
     padding-bottom: 6px;
     margin-bottom: 12px;
 }
 
 .content-box p {
     margin-bottom: 10px;
+    color: #000000;
 }
 
 .home-photo {
@@ -105,7 +115,7 @@ body {
     object-fit: cover;
     border-radius: 4px;
     margin-top: 10px;
-    border: 1px solid #d0d0d0;
+    border: 1px solid #cccccc;
 }
 
 .courses-grid {
@@ -120,8 +130,8 @@ body {
 }
 
 .course-card {
-    background-color: #fafafa;
-    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     padding: 16px;
     display: flex;
@@ -132,29 +142,29 @@ body {
 
 .course-card h3 {
     font-size: 1.05rem;
-    color: #222222;
+    color: #000000;
 }
 
 .course-card p {
     font-size: 0.88rem;
-    color: #555555;
+    color: #333333;
     margin-bottom: 8px;
     flex-grow: 1;
 }
 
 .card-btn {
     display: inline-block;
-    background-color: #1a56db;
+    background-color: #000000;
     color: #ffffff;
     text-decoration: none;
     font-size: 0.82rem;
-    padding: 5px 10px;
+    padding: 6px 12px;
     border-radius: 3px;
     width: fit-content;
 }
 
 .card-btn:hover {
-    background-color: #1342a8;
+    background-color: #444444;
 }
 
 .resources-grid {
@@ -165,16 +175,18 @@ body {
 }
 
 .resource-group {
-    background-color: #fafafa;
-    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     padding: 14px;
 }
 
 .resource-group h3 {
     font-size: 1rem;
-    color: #1a56db;
+    color: #000000;
     margin-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 4px;
 }
 
 .simple-list {
@@ -184,19 +196,20 @@ body {
 .simple-list li {
     font-size: 0.88rem;
     margin-bottom: 6px;
+    color: #000000;
 }
 
 .simple-list a {
-    color: #1a56db;
+    color: #000000;
     text-decoration: underline;
 }
 
 .featured-block {
     margin: 12px 0;
-    border: 1px solid #d0d0d0;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     overflow: hidden;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 
 .featured-photo {
@@ -210,9 +223,9 @@ body {
     padding: 8px 12px;
     font-size: 0.88rem;
     font-style: italic;
-    color: #555555;
-    background-color: #f7f7f7;
-    border-top: 1px solid #e0e0e0;
+    color: #333333;
+    background-color: #ffffff;
+    border-top: 1px solid #cccccc;
     text-align: center;
 }
 
@@ -224,26 +237,28 @@ body {
 }
 
 .media-box {
-    background-color: #fafafa;
-    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     padding: 14px;
 }
 
 .media-box h3 {
     font-size: 1rem;
+    color: #000000;
     margin-bottom: 4px;
 }
 
 .media-box p {
     font-size: 0.85rem;
-    color: #555555;
+    color: #333333;
 }
 
 .player {
     width: 100%;
     margin-top: 10px;
     border-radius: 3px;
+    border: 1px solid #cccccc;
 }
 
 video.player {
@@ -259,15 +274,15 @@ video.player {
 
 .sidebar-box {
     background-color: #ffffff;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     padding: 16px;
 }
 
 .sidebar-box h3 {
     font-size: 1.1rem;
-    color: #1a56db;
-    border-bottom: 1px solid #e0e0e0;
+    color: #000000;
+    border-bottom: 1px solid #cccccc;
     padding-bottom: 6px;
     margin-bottom: 10px;
 }
@@ -281,7 +296,7 @@ video.player {
 
 .announcements li {
     padding-bottom: 8px;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .announcements li:last-child {
@@ -291,12 +306,12 @@ video.player {
 
 .announcements strong {
     font-size: 0.88rem;
-    color: #222222;
+    color: #000000;
 }
 
 .announcements p {
     font-size: 0.82rem;
-    color: #666666;
+    color: #444444;
     margin-top: 2px;
 }
 
@@ -307,14 +322,14 @@ video.player {
 .tips-list li {
     font-size: 0.88rem;
     margin-bottom: 6px;
-    color: #333333;
+    color: #000000;
 }
 
 .site-footer {
-    background-color: #222222;
-    color: #eeeeee;
+    background-color: #ffffff;
+    color: #000000;
     margin-top: 30px;
-    border-top: 3px solid #1a56db;
+    border-top: 2px solid #000000;
 }
 
 .footer-content {
@@ -331,12 +346,12 @@ video.player {
 
 .footer-left h3 {
     font-size: 1.2rem;
-    color: #ffffff;
+    color: #000000;
 }
 
 .footer-left p {
     font-size: 0.85rem;
-    color: #aaaaaa;
+    color: #444444;
 }
 
 .footer-links {
@@ -348,22 +363,22 @@ video.player {
 }
 
 .footer-links a {
-    color: #cccccc;
+    color: #000000;
     text-decoration: none;
     font-size: 0.85rem;
 }
 
 .footer-links a:hover {
-    color: #ffffff;
     text-decoration: underline;
 }
 
 .copyright {
     text-align: center;
-    padding: 10px 16px;
+    padding: 12px 16px;
     font-size: 0.8rem;
-    color: #888888;
-    background-color: #181818;
+    color: #555555;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
 }
 
 @media (max-width: 850px) {
@@ -398,7 +413,8 @@ video.player {
 
     .nav-links a {
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.08);
+        border: 1px solid #e0e0e0;
+        background-color: #ffffff;
     }
 
     .courses-grid {
