@@ -8,18 +8,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.6;
-    color: #222222;
-    background-color: #fafbfc;
+    color: #1f2937;
+    background-color: #f8fafc;
 }
 
 a {
-    color: #0366d6;
+    color: #1e3a8a;
 }
 
 .site-header {
-    background-color: #ffffff;
-    color: #111111;
-    border-bottom: 1px solid #e1e4e8;
+    background-color: #1e3a8a;
+    color: #ffffff;
 }
 
 .header-content {
@@ -28,23 +27,22 @@ a {
     justify-content: center;
     align-items: center;
     gap: 4px;
-    padding: 22px 16px 14px 16px;
+    padding: 24px 16px 14px 16px;
     text-align: center;
 }
 
 .site-header h1 {
     font-size: 1.9rem;
-    color: #111111;
+    color: #ffffff;
 }
 
 .subtitle {
     font-size: 0.95rem;
-    color: #586069;
+    color: #bfdbfe;
 }
 
 .main-nav {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e1e4e8;
+    background-color: #172554;
     padding: 0 16px;
 }
 
@@ -60,7 +58,7 @@ a {
 }
 
 .nav-links a {
-    color: #24292e;
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.88rem;
     padding: 6px 12px;
@@ -68,8 +66,8 @@ a {
 }
 
 .nav-links a:hover {
-    background-color: #f1f3f5;
-    color: #000000;
+    background-color: #2563eb;
+    color: #ffffff;
 }
 
 .page-layout {
@@ -83,7 +81,7 @@ a {
 
 .content-box {
     background-color: #ffffff;
-    border: 1px solid #e1e4e8;
+    border: 1px solid #e2e8f0;
     border-radius: 6px;
     padding: 18px;
     margin-bottom: 18px;
@@ -91,15 +89,15 @@ a {
 
 .content-box h2 {
     font-size: 1.3rem;
-    color: #111111;
-    border-bottom: 1px solid #e1e4e8;
+    color: #1e3a8a;
+    border-bottom: 2px solid #dbeafe;
     padding-bottom: 6px;
     margin-bottom: 12px;
 }
 
 .content-box p {
     margin-bottom: 10px;
-    color: #333333;
+    color: #374151;
 }
 
 .home-photo {
@@ -108,7 +106,7 @@ a {
     object-fit: cover;
     border-radius: 4px;
     margin-top: 10px;
-    border: 1px solid #e1e4e8;
+    border: 1px solid #e2e8f0;
 }
 
 .courses-grid {
@@ -124,7 +122,7 @@ a {
 
 .course-card {
     background-color: #ffffff;
-    border: 1px solid #e1e4e8;
+    border: 1px solid #e2e8f0;
     border-radius: 4px;
     padding: 14px;
     display: flex;
@@ -135,29 +133,29 @@ a {
 
 .course-card h3 {
     font-size: 1rem;
-    color: #111111;
+    color: #1e3a8a;
 }
 
 .course-card p {
     font-size: 0.85rem;
-    color: #586069;
+    color: #4b5563;
     margin-bottom: 8px;
     flex-grow: 1;
 }
 
 .card-btn {
     display: inline-block;
-    background-color: #24292e;
+    background-color: #1e3a8a;
     color: #ffffff;
     text-decoration: none;
     font-size: 0.8rem;
-    padding: 5px 10px;
+    padding: 6px 12px;
     border-radius: 3px;
     width: fit-content;
 }
 
 .card-btn:hover {
-    background-color: #0366d6;
+    background-color: #2563eb;
 }
 
 .resources-grid {
@@ -169,16 +167,16 @@ a {
 
 .resource-group {
     background-color: #ffffff;
-    border: 1px solid #e1e4e8;
+    border: 1px solid #e2e8f0;
     border-radius: 4px;
     padding: 12px 14px;
 }
 
 .resource-group h3 {
     font-size: 0.95rem;
-    color: #111111;
+    color: #1e3a8a;
     margin-bottom: 8px;
-    border-bottom: 1px solid #f1f3f5;
+    border-bottom: 1px solid #e2e8f0;
     padding-bottom: 4px;
 }
 
@@ -189,17 +187,21 @@ a {
 .simple-list li {
     font-size: 0.85rem;
     margin-bottom: 5px;
-    color: #333333;
+    color: #374151;
 }
 
 .simple-list a {
-    color: #0366d6;
+    color: #1e3a8a;
     text-decoration: underline;
+}
+
+.simple-list a:hover {
+    color: #2563eb;
 }
 
 .featured-block {
     margin: 10px 0;
-    border: 1px solid #e1e4e8;
+    border: 1px solid #e2e8f0;
     border-radius: 4px;
     overflow: hidden;
     background-color: #ffffff;
@@ -216,9 +218,9 @@ a {
     padding: 8px 12px;
     font-size: 0.85rem;
     font-style: italic;
-    color: #586069;
-    background-color: #ffffff;
-    border-top: 1px solid #e1e4e8;
+    color: #4b5563;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
     text-align: center;
 }
 
@@ -231,14 +233,14 @@ a {
 
 .media-box {
     background-color: #ffffff;
-    border: 1px solid #e1e4e8;
+    border: 1px solid #e2e8f0;
     border-radius: 4px;
     padding: 14px;
 }
 
 .media-box h3 {
     font-size: 0.95rem;
-    color: #111111;
+    color: #1e3a8a;
     margin-bottom: 6px;
 }
 
@@ -246,7 +248,7 @@ a {
     width: 100%;
     margin-top: 6px;
     border-radius: 3px;
-    border: 1px solid #e1e4e8;
+    border: 1px solid #e2e8f0;
 }
 
 video.player {
@@ -262,15 +264,15 @@ video.player {
 
 .sidebar-box {
     background-color: #ffffff;
-    border: 1px solid #e1e4e8;
+    border: 1px solid #e2e8f0;
     border-radius: 6px;
     padding: 16px;
 }
 
 .sidebar-box h3 {
     font-size: 1.05rem;
-    color: #111111;
-    border-bottom: 1px solid #e1e4e8;
+    color: #1e3a8a;
+    border-bottom: 2px solid #dbeafe;
     padding-bottom: 6px;
     margin-bottom: 10px;
 }
@@ -284,7 +286,7 @@ video.player {
 
 .announcements li {
     padding-bottom: 6px;
-    border-bottom: 1px solid #f1f3f5;
+    border-bottom: 1px solid #f1f5f9;
 }
 
 .announcements li:last-child {
@@ -294,12 +296,12 @@ video.player {
 
 .announcements strong {
     font-size: 0.85rem;
-    color: #111111;
+    color: #1f2937;
 }
 
 .announcements p {
     font-size: 0.8rem;
-    color: #586069;
+    color: #4b5563;
     margin-top: 2px;
 }
 
@@ -310,14 +312,13 @@ video.player {
 .tips-list li {
     font-size: 0.85rem;
     margin-bottom: 6px;
-    color: #333333;
+    color: #374151;
 }
 
 .site-footer {
-    background-color: #ffffff;
-    color: #24292e;
+    background-color: #1e3a8a;
+    color: #ffffff;
     margin-top: 24px;
-    border-top: 1px solid #e1e4e8;
 }
 
 .footer-content {
@@ -334,12 +335,12 @@ video.player {
 
 .footer-left h3 {
     font-size: 1.1rem;
-    color: #111111;
+    color: #ffffff;
 }
 
 .footer-left p {
     font-size: 0.82rem;
-    color: #586069;
+    color: #bfdbfe;
 }
 
 .footer-links {
@@ -351,13 +352,13 @@ video.player {
 }
 
 .footer-links a {
-    color: #586069;
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.82rem;
 }
 
 .footer-links a:hover {
-    color: #0366d6;
+    color: #bfdbfe;
     text-decoration: underline;
 }
 
@@ -365,9 +366,8 @@ video.player {
     text-align: center;
     padding: 10px 16px;
     font-size: 0.78rem;
-    color: #6a737d;
-    background-color: #fafbfc;
-    border-top: 1px solid #e1e4e8;
+    color: #93c5fd;
+    background-color: #172554;
 }
 
 @media (max-width: 850px) {
@@ -402,8 +402,7 @@ video.player {
 
     .nav-links a {
         text-align: center;
-        border: 1px solid #e1e4e8;
-        background-color: #fafbfc;
+        background-color: #172554;
     }
 
     .courses-grid {
